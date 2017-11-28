@@ -5,9 +5,12 @@
 
   //Code here
 
+var me = {
+  name: "T",
+  age: 26
+}
 
-
-
+// alert(me.name);
 
 
 //NEXT PROBLEM
@@ -19,7 +22,14 @@
 
   //Code here
 
-
+var favoriteThings = {
+  band: "N/A",
+  food: "Pizza",
+  person: "Parents",
+  book: "Compound",
+  movie: "Interstellar",
+  holiday: "Christmas"
+}
 
 
 
@@ -29,7 +39,8 @@
 
   //Code here
 
-
+favoriteThings.car = "240sx";
+favoriteThings.brand = "Ferrari";
 
 
 
@@ -37,7 +48,8 @@
 
   //Code here
 
-
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 
@@ -57,7 +69,12 @@ that is named color, with the value being the color of your backpack.
 
   //Code here
 
+var backPack = {
 
+}
+var item = "firstPocket";
+backPack[item] = "chapstick";
+backPack.color = "black";
 
 
 
@@ -66,6 +83,7 @@ that is named color, with the value being the color of your backpack.
 
   //Code here
 
+  //alert(backPack);
  
 
 /*
@@ -76,6 +94,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
   //Code here
 
+  console.log(backPack);
 
 
 
@@ -98,7 +117,8 @@ var user2 = {
 
   //Code Here
 
-
+user2.name = "Tyler S. McGinnis";
+user2.email = "tyler.mcginnis@devmounta.in";
 
 
 
@@ -120,6 +140,7 @@ var user2 = {
 
   //Code Here
 
+  var methodCollection = {};
 
 
 
@@ -131,6 +152,8 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
+  methodCollection.alertHello = () => alert("hello");
+  methodCollection.logHello = () => console.log("hello");
 
 
 
@@ -139,7 +162,8 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
-
+// methodCollection.alertHello();
+methodCollection.logHello();
 
 
 
@@ -155,7 +179,13 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
-
+function makePerson(name, birthday, ssn){
+  return {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  }
+}
 
 
 
@@ -170,4 +200,10 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
-
+function makeCard(cardNumber, expirationDate, securityCode){
+  return {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+}
